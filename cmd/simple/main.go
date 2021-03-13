@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	common.InitLogger("test-simple", ".")
+	common.InitLogger("testsimple", ".")
 
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, syscall.SIGHUP, syscall.SIGQUIT, syscall.SIGTERM, syscall.SIGINT)
